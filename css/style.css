@@ -1,0 +1,441 @@
+/* 
+light mode:
+  Text = #050505
+  Background = #fafafa
+  Primary = #815718
+  Secondary = #f4f7d4
+  Accent = #d73a28
+
+
+Dark mode:
+  Text = #fafafa
+  Background = #050505
+  Primary = #815718
+  Secondary = #282b08
+  Accent = #e7897e
+
+font-family: 'Lora', serif;
+font-family: 'Lugrasimo', cursive;
+font-family: 'Rubik', sans-serif;
+*/
+
+:root {
+  --primary: #815718;
+  --secondary: #f4f7d4;
+  --accent: #d73a28;
+  --bg: #fafafa;
+  --bgAlt: #c2bab0;
+  --text: #050505;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  font-size: 1rem;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  background-color: var(--bg);
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 80vw;
+  margin: 50px auto;
+  /* padding: 20px; */
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: 10px;
+}
+
+
+
+
+
+/* HEADER SEC. START */
+header {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-family: 'Lugrasimo', cursive;
+  font-size: 2.3em;
+  color: var(--accent);
+  text-align: center;
+}
+
+header p {
+  text-indent: 20px;
+  text-align: justify;
+  line-height: 25px;
+}
+/* HEADER SEC. FINISH */
+
+
+
+
+
+/* SUB HEADING SEC. START */
+.formDetail h3,
+.resultCorner h2,
+.resultInfo h3,
+.info h3,
+footer h2 {
+  font-family: 'Lugrasimo', cursive;
+  color: var(--accent);
+  margin-top: 10px;
+}
+/* SUB HEADING SEC. FINISH */
+
+
+
+
+
+/* FORM SEC. START */
+.formCorner {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+form {
+  background-color: var(--bgAlt);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+form input[type=radio] {
+  width: auto;
+  height: auto;
+  accent-color: var(--accent);
+}
+
+.input_container {
+  display: flex;
+  background-color: var(--bg);
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+form input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+form label.icon {
+  padding-left: 5px;
+  color: var(--primary);
+}
+
+.formDetail {
+  padding: 20px;
+}
+
+.formDetail ol,
+.formDetail p,
+.resultInfo p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.formDetail p {
+  text-indent: 25px;
+}
+/* FORM SEC. FINISH */
+
+
+
+
+
+/* BUTTON SEC. START */
+.button_container {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+form button[type=submit],
+.consult {
+  width: 50%;
+  background-color: var(--primary);
+  color: var(--bg);
+  font-family: 'Rubik', sans-serif;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3em;
+  padding: 10px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, .5);
+}
+
+.consult {
+  width: auto;
+}
+
+.reg {
+  height: 100%;
+}
+
+form button[type=submit]:hover,
+.consult:hover {
+  cursor: pointer;
+  background-color: #c6954c;
+}
+
+form button[type=reset],
+.reg {
+  background-color: var(--secondary);
+  color: var(--text);
+  font-family: 'Rubik', sans-serif;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3em;
+  padding: 10px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, .5);
+}
+
+form button[type=reset]:hover,
+.reg:hover {
+  cursor: pointer;
+  background-color: #c9cf85;
+}
+/* BUTTON SEC. FINISH */
+
+
+
+
+
+/* RESULTINFO SEC. START */
+.resultCorner {
+  /* background-color: aqua; */
+  padding: 20px;
+  padding-top: 0;
+}
+
+.resultData {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 200px;
+  background-color: var(--bgAlt);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+}
+
+.resultData .resultDataText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+/* .resultDataText .resImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.resultData .resImg img {
+  width: 200px;
+}
+
+.resultData .resultDataText p {
+  font-size: 3.4em;
+}
+
+#bmiResult {
+  padding: 20px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.resultInfo h5 {
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+/* RESULTINFO SEC. FINISH */
+
+
+
+
+
+/* INFO SEC. START */
+.info {
+  background-color: var(--bgAlt);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.info p {
+  text-indent: 25px;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.info h3{
+  text-align: center;
+}
+
+.info ul li {
+  list-style-type: none;
+  text-align: center;
+}
+/* INFO SEC. FINISH */
+
+
+
+/* FOOTER SEC. START */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footerImg {
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  width: 50px;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+footer img:hover {
+  cursor: pointer;
+  background-color: #c1c1c1;
+}
+/* FOOTER SEC. FINISH */
+
+
+
+
+
+/* GRID POSITION START */
+.container {
+  display: grid;
+  grid-template-areas:
+                  "header header"
+                  "form result"
+                  "info info"
+                  "foot foot";
+  grid-template-columns: 0.8fr 1fr;
+}
+
+header {
+  grid-area: header;
+}
+
+.formCorner {
+  grid-area: form;
+}
+
+.resultCorner {
+  grid-area: result;
+}
+
+.info {
+  grid-area: info;
+}
+
+footer {
+  grid-area: foot;
+}
+/* GRID POSITION FINISH */
+
+
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1050px) {
+  .container {
+    grid-template-areas: 
+                    "header"
+                    "form"
+                    "result"
+                    "info"
+                    "foot";
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .resultData {
+    height: auto;
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button_container {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+/* Pop up button */
+.popUp {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  left: 15px;
+}
+
+.popUp img {
+  width: 100px;
+  z-index: 100;
+}
+
+.popUp img:hover{
+  cursor: pointer;
+}
+
+.popUp .popUpBg {
+  background-color: rgba(0, 0, 230, 0.1);
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: -10px;
+  z-index: 90;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: .3s;
+}
+
+.popUp .popUpBg.active {
+  transform: scaleY(1);
+}
+
+.popUp .popUpBg img {
+  width: 50px;
+}
