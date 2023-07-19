@@ -68,14 +68,6 @@ header h1 {
   text-align: center;
 }
 
-header h3 {
-  font-family: 'Lugrasimo', cursive;
-  font-size: 1em;
-  margin: 10px;
-  color: var(--accent);
-  text-align: center;
-}
-
 header p {
   text-indent: 20px;
   text-align: justify;
